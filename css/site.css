@@ -16558,12 +16558,12 @@ body {
 }
 
 #siteWrapper {
-    font-family: "Kameron", Georgia, serif;
+    font-family: 'Open Sans Condensed', sans-serif;
     font-size: 16px;
     letter-spacing: 0px;
     line-height: 1.6em;
     font-family: futura-pt;
-    font-weight: 400;
+    font-weight: 300;
     font-style: normal;
     font-size: 14px;
     letter-spacing: .4px;
@@ -19331,8 +19331,7 @@ html:not(.no-js) .index-section:first-of-type .index-section-image img:not(.load
 }
 
 p {
-    font-family: "Kameron", Georgia, serif;
-    font-family: futura-pt;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
 .index-gallery .description p {
@@ -20539,5 +20538,3 @@ html.squarespace-cameron .yui3-lightbox2 .sqs-lightbox-overlay {
     letter-spacing: 1px;
     text-transform: uppercase
 }
-
-/*! Squarespace LESS Compiler  (less.js language v1.3.3)  */
