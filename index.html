@@ -1,3 +1,5 @@
+---
+---
 <!DOCTYPE html>
 <html lang="en-US"
       class="yui3-js-enabled js flexbox canvas canvastext webgl no-touch hashchange history draganddrop rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms no-csstransforms3d csstransitions video audio svg inlinesvg svgclippaths wf-futurapt-n4-active wf-futurapt-i4-active wf-futurapt-i7-active wf-futurapt-n3-active wf-futurapt-n7-active wf-active"
@@ -152,15 +154,17 @@
                 <div class="sqs-layout sqs-grid-12 columns-12" data-type="page">
                     <div class="row sqs-row">
                         <div class="col sqs-col-12 span-12">
+                            {% for video in site.data.videos %}
                             <div class="sqs-block video-block sqs-block-video">
                                 <div class="sqs-block-content">
                                     <div class="sqs-video-wrapper video-none"
-                                         data-html="&lt;div style=&quot;padding:56.25% 0 0 0;position:relative;&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/468861868&quot; style=&quot;position:absolute;top:0;left:0;width:100%;height:100%;&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;script src=&quot;https://player.vimeo.com/api/player.js&quot;&gt;&lt;/script&gt;">
+                                         data-html="&lt;div style=&quot;padding:56.25% 0 0 0;position:relative;&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/{{video.vimeo}}&quot; style=&quot;position:absolute;top:0;left:0;width:100%;height:100%;&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;script src=&quot;https://player.vimeo.com/api/player.js&quot;&gt;&lt;/script&gt;">
                                         <div class="intrinsic">
                                             <div class="intrinsic-inner" style="padding-bottom: 56.338%;">
                                                 <div class="sqs-video-overlay" style="opacity: 1; overflow: hidden;">
-                                                    <img class="loaded" data-image-dimensions="3508x2480"
-                                                         src="img/i-am-here.jpg">
+                                                    <img class="loaded"
+                                                         data-image-dimensions="{{video.image_dimension}}"
+                                                         src="{{video.image_url}}">
                                                     <div class="sqs-video-opaque"></div>
                                                     <div class="sqs-video-icon" tabindex="0" role="button"
                                                          aria-label="Play"></div>
@@ -170,96 +174,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="sqs-block video-block sqs-block-video">
-                                <div class="sqs-block-content">
-                                    <div class="sqs-video-wrapper video-none"
-                                         data-html="&lt;div style=&quot;padding:16.25% 0 0 0;position:relative;&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/470095293&quot; style=&quot;position:absolute;top:0;left:0;width:100%;height:100%;&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;script src=&quot;https://player.vimeo.com/api/player.js&quot;&gt;&lt;/script&gt;">
-                                        <div class="intrinsic">
-                                            <div class="intrinsic-inner" style="padding-bottom: 56.338%;">
-                                                <div class="sqs-video-overlay" style="opacity: 1; overflow: hidden;">
-                                                    <img class="loaded" data-image-dimensions="1080x1080"
-                                                         src="img/summer-days-off.jpg">
-                                                    <div class="sqs-video-opaque"></div>
-                                                    <div class="sqs-video-icon" tabindex="0" role="button"
-                                                         aria-label="Play"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="sqs-block video-block sqs-block-video">
-                                <div class="sqs-block-content">
-                                    <div class="sqs-video-wrapper video-none"
-                                         data-html="&lt;div style=&quot;padding:16.25% 0 0 0;position:relative;&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/664292517&quot; style=&quot;position:absolute;top:0;left:0;width:100%;height:100%;&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;script src=&quot;https://player.vimeo.com/api/player.js&quot;&gt;&lt;/script&gt;">
-                                        <div class="intrinsic">
-                                            <div class="intrinsic-inner" style="padding-bottom: 56.338%;">
-                                                <div class="sqs-video-overlay" style="opacity: 1; overflow: hidden;">
-                                                    <img class="loaded" data-image-dimensions="1600x900"
-                                                         src="img/tabletochki.jpg">
-                                                    <div class="sqs-video-opaque"></div>
-                                                    <div class="sqs-video-icon" tabindex="0" role="button"
-                                                         aria-label="Play"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="sqs-block video-block sqs-block-video">
-                                <div class="sqs-block-content">
-                                    <div class="sqs-video-wrapper video-none"
-                                         data-html="&lt;div style=&quot;padding:16.25% 0 0 0;position:relative;&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/661185768&quot; style=&quot;position:absolute;top:0;left:0;width:100%;height:100%;&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;script src=&quot;https://player.vimeo.com/api/player.js&quot;&gt;&lt;/script&gt;">
-                                        <div class="intrinsic">
-                                            <div class="intrinsic-inner" style="padding-bottom: 56.338%;">
-                                                <div class="sqs-video-overlay" style="opacity: 1; overflow: hidden;">
-                                                    <img class="loaded" data-image-dimensions="1600x900"
-                                                         src="img/golos.jpg">
-                                                    <div class="sqs-video-opaque"></div>
-                                                    <div class="sqs-video-icon" tabindex="0" role="button"
-                                                         aria-label="Play"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="sqs-block video-block sqs-block-video">
-                                <div class="sqs-block-content">
-                                    <div class="sqs-video-wrapper video-none"
-                                         data-html="&lt;div style=&quot;padding:16.25% 0 0 0;position:relative;&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/539999996&quot; style=&quot;position:absolute;top:0;left:0;width:100%;height:100%;&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;script src=&quot;https://player.vimeo.com/api/player.js&quot;&gt;&lt;/script&gt;">
-                                        <div class="intrinsic">
-                                            <div class="intrinsic-inner" style="padding-bottom: 56.338%;">
-                                                <div class="sqs-video-overlay" style="opacity: 1; overflow: hidden;">
-                                                    <img class="loaded" data-image-dimensions="1600x900"
-                                                         src="img/jewelry.jpg">
-                                                    <div class="sqs-video-opaque"></div>
-                                                    <div class="sqs-video-icon" tabindex="0" role="button"
-                                                         aria-label="Play"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="sqs-block video-block sqs-block-video">
-                                <div class="sqs-block-content">
-                                    <div class="sqs-video-wrapper video-none"
-                                         data-html="&lt;div style=&quot;padding:16.25% 0 0 0;position:relative;&quot;&gt;&lt;iframe src=&quot;https://player.vimeo.com/video/610818519&quot; style=&quot;position:absolute;top:0;left:0;width:100%;height:100%;&quot; frameborder=&quot;0&quot; allow=&quot;autoplay; fullscreen&quot; allowfullscreen&gt;&lt;/iframe&gt;&lt;/div&gt;&lt;script src=&quot;https://player.vimeo.com/api/player.js&quot;&gt;&lt;/script&gt;">
-                                        <div class="intrinsic">
-                                            <div class="intrinsic-inner" style="padding-bottom: 56.338%;">
-                                                <div class="sqs-video-overlay" style="opacity: 1; overflow: hidden;">
-                                                    <img class="loaded" data-image-dimensions="1920x1080"
-                                                         src="img/garnier-10-in-1.jpeg">
-                                                    <div class="sqs-video-opaque"></div>
-                                                    <div class="sqs-video-icon" tabindex="0" role="button"
-                                                         aria-label="Play"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            {% endfor %}
                         </div>
                     </div>
                 </div>
