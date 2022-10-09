@@ -20538,3 +20538,8 @@ html.squarespace-cameron .yui3-lightbox2 .sqs-lightbox-overlay {
     letter-spacing: 1px;
     text-transform: uppercase
 }
+
+.about-paragraph {
+    text-align:justify;
+    font-size: 20px
+}
