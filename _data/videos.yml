@@ -1,39 +1,47 @@
 - title: I am Here
   image_url: img/i-am-here.jpg
   image_dimension: 1280x904
+  type: vimeo
   vimeo: 468861868
 
 - title: Голос Країни 2023
   image_url: img/holos-krayiny.jpg
   image_dimension: 1920x1064
+  type: vimeo
   vimeo: 858701051
 
 - title: Charity dance performance, Austria-Ukraine
   image_url: img/charity-dance-austria-ukraine.jpg
   image_dimension: 1920x1080
-  vimeo: 734267733
+  type: youtube
+  youtube: zSlhNN-VqBo
 
 - title: Summer days off
   image_url: img/summer-days-off.jpg
   image_dimension: 1080x1080
+  type: vimeo
   vimeo: 470095293
 
 - title: Tabletochki
   image_url: img/tabletochki.jpg
   image_dimension: 1920x1080
+  type: vimeo
   vimeo: 664292517
 
 - title: Golos
   image_url: img/golos.jpg
   image_dimension: 1909x1074
+  type: vimeo
   vimeo: 661185768
 
 - title: Jewelery
   image_url: img/jewelry.jpg
   image_dimension: 1600x900
+  type: vimeo
   vimeo: 539999996
 
 - title: Garnier 10 in 1
   image_url: img/garnier-10-in-1.jpeg
   image_dimension: 1920x1080
+  type: vimeo
   vimeo: 610818519
